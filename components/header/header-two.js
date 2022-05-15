@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Container } from "react-bootstrap";
 import NavLinks from "./nav-links";
 
-import flag1 from "../../assets/images/resources/flag-1-1.jpg";
-import logoDark from "../../assets/images/logo-dark.png";
+import flag1 from "../../assets/images/logo/Land.png";
+import logoDark from "../../assets/images/logo/Land.png";
 
 const HeaderTwo = () => {
   useEffect(() => {
@@ -93,7 +93,7 @@ const HeaderTwo = () => {
               <div className="header-info__box-content">
                 <h3>Phone</h3>
                 <p>
-                  <a href="tel:666-888-0000">666 888 0000</a>
+                  <a href="tel:666-888-0000">0352 268 504</a>
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const HeaderTwo = () => {
               <i className="azino-icon-address"></i>
               <div className="header-info__box-content">
                 <h3>Visit</h3>
-                <p>88 Broklyn Golden Street, USA</p>
+                <p>Warakapola, Kegalla</p>
               </div>
             </div>
           </div>

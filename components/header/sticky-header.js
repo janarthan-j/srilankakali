@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 import NavLinks from "./nav-links";
-import logoLight from "../../assets/images/logo-light.png";
+import logoLight from "../../assets/images/logo/Land.png";
 
 const StickyHeader = ({ extraClassName }) => {
   const [sticky, setSticky] = useState(false);
@@ -22,9 +22,8 @@ const StickyHeader = ({ extraClassName }) => {
   });
   return (
     <div
-      className={`stricky-header stricked-menu ${extraClassName} ${
-        sticky === true ? "stricky-fixed" : " "
-      }`}
+      className={`stricky-header stricked-menu ${extraClassName} ${sticky === true ? "stricky-fixed" : " "
+        }`}
     >
       <div className="container">
         <div className="logo-box">

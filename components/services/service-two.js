@@ -2,30 +2,46 @@ import React from "react";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import image1 from "../../assets/images/resources/service-1-1.jpg";
-import image2 from "../../assets/images/resources/service-1-2.jpg";
-import image3 from "../../assets/images/resources/service-1-3.jpg";
+import image1 from "../../assets/images/poojas/01.jpg";
+import image2 from "../../assets/images/poojas/02.jpg";
+import image3 from "../../assets/images/poojas/03.jpg";
+import image4 from "../../assets/images/poojas/04.jpg";
+import image5 from "../../assets/images/poojas/01.jpg";
 import heart from "../../assets/images/shapes/heart-2-2.png";
 const SERVICE_TWO_DATA = [
   {
-    extraClassName: "background-primary",
+    extraClassName: "background-overlay",
     image: image1,
-    title: "More charity better lives",
-    text: "Start Donating",
+    title: "ARCHANA",
+    text: "PRAISE OR HONOUR THE LORD",
     link: "#"
   },
   {
-    extraClassName: "background-secondary",
+    extraClassName: "background-overlay",
     image: image2,
-    title: "Join our volunteers",
-    text: "Let’s Join",
+    title: "ABISHEKA POOJA",
+    text: "AN ARCHANA IS A RITUAL DONE IN PRAISE OF A DEITY",
     link: "#"
   },
   {
-    extraClassName: "background-base",
+    extraClassName: "background-overlay",
     image: image3,
-    title: "Poor childs education",
-    text: "Quick Funding",
+    title: "NAVAGRAHA POOJA ",
+    text: "THE CEREMONIAL WORSHIP DONE TO THE 9 PLANETS",
+    link: "#"
+  },
+  {
+    extraClassName: "background-overlay",
+    image: image4,
+    title: "RAHU KALA POOJA",
+    text: "THIS POOJA IS DONE TO INCUR THE FAVOR OF THE SNAKE GOD",
+    link: "#"
+  },
+  {
+    extraClassName: "background-overlay",
+    image: image5,
+    title: "ASHTA LAKSMI PUJA",
+    text: "GODDESS LAKSHMI IS WORSHIPPED IN SEVERAL FORMS",
     link: "#"
   }
 ];
@@ -33,6 +49,7 @@ const ServiceTwo = () => {
   const sliderOptions = {
     slidesPerView: 3,
     spaceBetween: 30,
+    autoplay: true,
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -76,9 +93,9 @@ const ServiceTwo = () => {
                   style={{ backgroundImage: `url(${image})` }}
                 >
                   <div className="service-two__box-inner">
-                    <img src={heart} width="15" alt="" />
-                    <p>{text}</p>
-                    <h3>
+
+                    <p className="text-sentence">{text}</p>
+                    <h3 className="text-sentence">
                       <Link href={link}>
                         <a>{title}</a>
                       </Link>

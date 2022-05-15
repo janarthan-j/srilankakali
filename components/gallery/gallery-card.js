@@ -6,7 +6,7 @@ const GalleryCard = ({ image }) => {
   return (
     <SimpleReactLightbox>
       <div className="gallery-card">
-        <img src={image} className="img-fluid" alt="" />
+        <img src={image} className="" alt="" />
         <SRLWrapper>
           <div className="gallery-content">
             <a

@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
-import banner1 from "../../assets/images/main-slider/slider-2-1.jpg";
-import banner2 from "../../assets/images/main-slider/slider-1-2.jpg";
+import banner1 from "../../assets/images/kovil front/01.jpg";
+import banner2 from "../../assets/images/kovil front/02.jpg";
+import Link from "next/link";
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
@@ -35,16 +36,18 @@ const MainSliderTwo = () => {
             <Row className=" justify-content-start">
               <Col xl={6} lg={12} className="text-left">
                 <h2>
-                  Donat<span>i</span>on <br /> Can Change <br /> Someone’s Life
+                  Sri Maha Badrakali Amman Kovil
                 </h2>
-                <p>Make a difference in families lives with just $5 a Month</p>
-                <a
-                  href="#"
-                  data-target=".donate-options"
-                  className="scroll-to-target thm-btn dynamic-radius"
-                >
-                  Start Donating
-                </a>
+                <p></p>
+                <Link href="#">
+                  <a
+
+
+                    className="scroll-to-target thm-btn dynamic-radius"
+                  >
+                    Check Pooja Time
+                  </a>
+                </Link>
               </Col>
             </Row>
           </Container>
@@ -59,44 +62,23 @@ const MainSliderTwo = () => {
             <Row className=" justify-content-start">
               <Col xl={6} lg={12} className="text-left">
                 <h2>
-                  Donat<span>i</span>on <br /> Can Change <br /> Someone’s Life
+                  Sri Maha Badrakali Amman Kovil
                 </h2>
-                <p>Make a difference in families lives with just $5 a Month</p>
-                <a
-                  href="#"
-                  data-target=".donate-options"
-                  className="scroll-to-target thm-btn dynamic-radius"
-                >
-                  Start Donating
-                </a>
-              </Col>
-            </Row>
-          </Container>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            className="image-layer"
-            style={{ backgroundImage: `url(${banner1})` }}
-          ></div>
+                <p></p>
+                <Link href="#">
+                  <a
 
-          <Container>
-            <Row className="justify-content-start">
-              <Col xl={6} lg={12} className="text-left">
-                <h2>
-                  Donat<span>i</span>on <br /> Can Change <br /> Someone’s Life
-                </h2>
-                <p>Make a difference in families lives with just $5 a Month</p>
-                <a
-                  href="#"
-                  data-target=".donate-options"
-                  className="scroll-to-target thm-btn dynamic-radius"
-                >
-                  Start Donating
-                </a>
+
+                    className="scroll-to-target thm-btn dynamic-radius"
+                  >
+                    Check Pooja Time
+                  </a>
+                </Link>
               </Col>
             </Row>
           </Container>
         </SwiperSlide>
+
         <div className="swiper-pagination" id="main-slider-pagination"></div>
       </Swiper>
     </section>

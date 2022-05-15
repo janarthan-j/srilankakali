@@ -3,9 +3,9 @@ import Head from "next/head";
 import MobileNav from "./mobile-nav";
 import SearchPopup from "./search-popup";
 
-import AppleTouch from "../assets/images/favicons/apple-touch-icon.png";
-import Fevicon32 from "../assets/images/favicons/favicon-32x32.png";
-import Fevicon16 from "../assets/images/favicons/favicon-16x16.png";
+import AppleTouch from "../assets/images/logo/icon.png";
+import Fevicon32 from "../assets/images/logo/icon.png";
+import Fevicon16 from "../assets/images/logo/icon.png";
 
 const Layout = ({ pageTitle, children }) => {
   const handleRadius = () => {
@@ -14,6 +14,8 @@ const Layout = ({ pageTitle, children }) => {
       let btnHeight = btn.offsetHeight;
       btn.style.borderBottomLeftRadius = btnHeight / 2 + "px";
       btn.style.borderTopLeftRadius = btnHeight / 2 + "px";
+      btn.style.borderBottomRightRadius = btnHeight / 2 + "px";
+      btn.style.borderTopRightRadius = btnHeight / 2 + "px";
     });
   };
 

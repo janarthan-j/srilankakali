@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 import heart from "../../assets/images/shapes/heart-2-1.png";
-import welcomeImage from "../../assets/images/resources/welcome-1-1.png";
+import welcomeImage from "../../assets/images/kovil front/02.jpg";
 import aboutImage from "../../assets/images/shapes/about-bag-1-2.png";
 
 const AboutTwo = () => {
@@ -13,25 +13,24 @@ const AboutTwo = () => {
           <Col xl={6}>
             <div className="about-two__image">
               <img src={welcomeImage} alt="" />
-              <div className="about-two__award">
-                <img src={aboutImage} alt="" />
-              </div>
+
             </div>
           </Col>
           <Col xl={6}>
             <div className="about-two__content">
               <div className="block-title">
                 <p>
-                  <img src={heart} width="15" alt="" /> About Azino Platform
+                  History
                 </p>
-                <h3>Welcome to non-profit charity organization.</h3>
+                <h3>ஸ்ரீ பத்திரகாளி ஹனுமன் ஆலய வரலாறும் அதன் சிறப்பும்</h3>
               </div>
               <p className="mb-40 pr-10">
-                Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
-                sed do eiusmod tempor incididunt simply free ut labore et dolore
-                magna aliqua simhy adndnh qkhhn.
+                இலங்கையின் சப்ரகமுவ மாகாணம் கேகாலை மாவட்டத்தில் கண்டி கொழும்பு பிரதான வீதியில்  அமைந்துள்ளது வரக்காப்பொலை ஸ்ரீ பத்திரகாளி ஹனுமன் ஆலயம்.
+
+
+                இவ்வாலயம் அமைந்துள்ள பிரதேசம்  இலங்கையின் பல பாகங்களுக்குச் செல்லக்கூடிய  போக்குவரத்திற்கான மையபகுதியாகவும் காணப்படுகிறது.
               </p>
-              <Row>
+              {/* <Row>
                 <Col md={6}>
                   <div className="about-two__box">
                     <h3>
@@ -58,7 +57,7 @@ const AboutTwo = () => {
                     <h3>You can make a big difference in someone’s life.</h3>
                   </div>
                 </Col>
-              </Row>
+              </Row> */}
               <Link href="/about">
                 <a className="thm-btn dynamic-radius">Discover More</a>
               </Link>
